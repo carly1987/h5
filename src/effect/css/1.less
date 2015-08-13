@@ -1,0 +1,63 @@
+body{background: #000;}
+.u-globalAudio{
+	color: #fff;
+	text-decoration: none;
+	position: fixed;
+	left: 50%;
+	margin-left: 248px;
+	bottom: 28px;
+	display: block;
+	z-index: 9999;
+	.icon-music {
+		width: 54px;
+		height: 54px;
+		background: url(../img/units-icons.png) 0 0;
+		display: block;
+	}
+	&.z-play{
+		.icon-music {-webkit-animation: reverseRotataZ 1.2s linear infinite;}
+	} 
+	.coffee-steam-box{
+		height: 100px;
+		width: 50px;
+		left: 36px;
+		top: -50px;
+		position: absolute;
+		overflow: hidden;
+		z-index: 0;
+		-webkit-transition: left 2.88s cubic-bezier(0.09, 0.64, 0.16, 0.94) 0s;
+		transition: left 2.88s cubic-bezier(0.09, 0.64, 0.16, 0.94) 0s;
+		-webkit-transform: translate(-40px,-40px);
+		span{
+			position: absolute;
+			left: 0px;
+			top: 10px;
+			text-shadow: 1px 1px 1px #000;
+			letter-spacing: 2px;
+			-webkit-transition: all .2s linear; 
+			opacity: 1;
+			-webkit-transform: translateX(-20px);
+			-webkit-animation: smoke 1s linear infinite;
+		}
+	}
+}
+
+
+@-webkit-keyframes reverseRotataZ {
+    0% {
+        -webkit-transform: rotateZ(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotateZ(-360deg)
+    }
+}
+@-webkit-keyframes smoke {
+    0% {
+        -webkit-transform: rotateZ(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotateZ(-360deg)
+    }
+}
