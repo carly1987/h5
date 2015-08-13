@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta charset="utf-8"/>
+<title>input</title>
+<link href="input.css" rel="stylesheet">
+</head>
+<body>
+	<style>
+	input{display: block; width: 100%;}
+	.form-control,
+.form-control:focus{
+    padding: 0;
+    float: none;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0
+}
+
+.form-control:not(textarea),
+.form-control:focus:not(textarea){
+    height: 28px
+}
+
+.form-control:disabled,
+.form-control:focus:disabled{
+    border-style: dashed;
+    border-bottom: 1px solid #757575
+}
+
+
+.form-control {
+    border: 0;
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2);
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: transparent
+}
+
+
+.form-control:disabled,
+.form-control:focus:disabled{
+    border: 0
+}
+
+.form-control:focus,
+.form-control.focus {
+    outline: none;
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2);
+    -webkit-animation: input-highlight .5s forwards;
+    animation: input-highlight .5s forwards;
+    box-shadow: none;
+    background-size: 0 2px, 100% 1px
+}
+
+@-webkit-keyframes input-highlight {
+    0% {
+        background-size: 0 2px, 100% 1px
+    }
+    100% {
+        background-size: 100% 2px, 100% 1px
+    }
+}
+
+@keyframes input-highlight {
+    0% {
+        background-size: 0 2px, 100% 1px
+    }
+    100% {
+        background-size: 100% 2px, 100% 1px
+    }
+}
+	</style>
+	<input class="form-control" type="text" placeholder="text"/>
+	<div class="form-control-wrapper">
+    <input type="text" class="form-control empty">
+    <div class="floating-label">floating label</div>
+    <span class="material-input"></span>
+  </div>
+  <div class="form-control-wrapper">
+    <input type="text" class="form-control empty">
+    <div class="floating-label text-center">floating label</div>
+    <span class="material-input"></span>
+  </div>
+<script type="text/javascript" src="http://jstest.cy.com/dist/g/js/lib.js" id="libjsnode"></script>
+</body>
+</html>

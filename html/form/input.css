@@ -1,0 +1,101 @@
+.form-control-wrapper .form-control,
+.form-control-wrapper .form-control:focus{
+	padding: 0;
+	float: none;
+	border: 0;
+	box-shadow: none;
+	border-radius: 0
+}
+
+.form-control-wrapper .form-control:not(textarea),
+.form-control-wrapper .form-control:focus:not(textarea){
+	height: 28px
+}
+
+.form-control-wrapper .form-control:disabled,
+.form-control-wrapper .form-control:focus:disabled{
+	border-style: dashed;
+	border-bottom: 1px solid #757575
+}
+
+.form-control-wrapper .form-control:disabled,
+.form-control-wrapper .form-control:focus:disabled{
+	border: 0
+}
+
+.form-control-wrapper {
+	position: relative;
+	margin: 30px 0;
+}
+
+.form-control-wrapper .floating-label {
+	color: #7e7e7e;
+	font-size: 14px;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 5px;
+	transition: .2s ease all;
+	opacity: 0;
+}
+
+.form-control-wrapper .form-control:focus~.floating-label,
+.form-control-wrapper .form-control:not(.empty)~.floating-label {
+	top: -10px;
+	font-size: 10px;
+	opacity: 1;
+}
+
+.form-control-wrapper .form-control:focus~.floating-label {
+	color: #009688;
+}
+
+.form-control-wrapper .form-control:not(.empty):invalid~.floating-label,
+.form-control-wrapper .form-control.focus:invalid~.floating-label {
+	color: #f44336;
+}
+
+.form-control-wrapper .form-control:focus~.material-input:after,
+.form-control-wrapper .form-control.focus~.material-input:after {
+	background-color: #009688;
+}
+
+.form-control-wrapper .form-control:invalid {
+	background-image: linear-gradient(#f44336, #f44336), linear-gradient(#d2d2d2, #d2d2d2);
+}
+
+.form-control-wrapper .form-control.empty~.floating-label {
+	opacity: 1;
+}
+
+.form-control-wrapper textarea {
+	resize: none;
+}
+
+.form-control-wrapper textarea~.form-control-highlight {
+	margin-top: -11px;
+}
+
+.form-control-wrapper .hint {
+	position: absolute;
+	font-size: 80%;
+	display: none;
+}
+
+.form-control-wrapper .form-control:focus~.hint,
+.form-control-wrapper .form-control.focus~.hint {
+	display: block;
+}
+
+.form-control-wrapper .floating-label.text-center{
+	left: 50%;
+	width: 100px;
+	margin-left: -50px;
+	text-align: center;
+}
+.form-control-wrapper .form-control:focus~.floating-label.text-center,
+.form-control-wrapper .form-control:not(.empty)~.floating-label.text-center {
+	top: -10px;
+	font-size: 10px;
+	opacity: 1;
+}
