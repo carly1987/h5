@@ -1,0 +1,41 @@
+body{background: #ff0000;}
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    display: inline-block;
+}
+::-moz-selection {
+    background: none;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: none;
+    color: #fff;
+    text-shadow: none;
+}
+.media{
+	height: 200px; width: 100%; background: #000; text-align: center; line-height: 200px; font-size: 30px; color:#fff;
+	&:before{
+		display: inline; content: "没有media"; 
+	}
+}
+
+@media screen and (orientation:landscape){
+	.media:before{
+		content: "screen and landscape"; 
+	}
+}
+
+@media screen and (orientation:portrait){
+	.media:before{
+		content: "screen and portrait"; 
+	}
+}
+
+@media screen and (min-width:320px){
+	.media:before{
+		content: "min-width:320px"; 
+	}
+}

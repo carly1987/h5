@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta charset="utf-8"/>
+<title>1</title>
+<link rel="stylesheet" type="text/css" href="http://csstest.cy.com/dist/countDown/css/1.css" />
+</head>
+<body>
+    倒计时： <i id="countDown"></i>
+<script>
+function countDown(secs,fn){
+    for (var i = secs; i >= 0; i--) {
+        (function(index) {
+            setTimeout(function(){
+                if(fn){
+                    fn(index);
+                }
+            }, (secs - index) * 1000);
+        })(i);
+    };
+}
+countDown(10,function(time){
+    $('#countDown').text(time);
+});
+</script>
+<script type="text/javascript" src="http://jstest.cy.com/dist/g/js/lib.js" id="libjsnode"></script>
+</body>
+</html>
