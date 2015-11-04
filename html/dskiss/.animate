@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta charset="utf-8"/>
+<title>1</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+	<div class="wrap">
+		<p class="title1">coming soon</p>
+		<p class="title2">The <b>first auction</b> starts in</p>
+		<div class="cutdown" id="cutdown">
+			<p><b class="day" id="day">00</b><small>days</small></p>
+			<p><b class="hour" id="hour">00</b><small>hours</small></p>
+			<p><b class="min" id="min">00</b><small>min</small></p>
+			<p><b class="sec" id="sec">00</b><small>sec</small></p>
+		</div>
+		<p class="title3">Call us<br><b>400-150-1101</b></p>
+		<p class="title4"><a href="index-en.html">EN</a><a href="index-.html">中文</a></p>
+	</div>
+	<div class="bg"><i></i></div>
+<script type="text/javascript">
+    function getRTime(){
+    	var end = '2018/10/22 14:10:00';
+        var EndTime= new Date(end);
+        var NowTime = new Date();
+        var t =EndTime.getTime() - NowTime.getTime();
+        if( t > 0){
+            var d=Math.floor(t/1000/60/60/24);
+            var h=Math.floor(t/1000/60/60%24);
+            var m=Math.floor(t/1000/60%60);
+            var s=Math.floor(t/1000%60);  
+        }else{
+            var d= '-';
+            var h= '-';
+            var m= '-';
+            var s=Math.floor(t/1000%60); 
+        }
+        document.getElementById("day").innerHTML = d;
+        document.getElementById("hour").innerHTML = h;
+        document.getElementById("min").innerHTML = m;
+        document.getElementById("sec").innerHTML = s;
+    }
+    setInterval(getRTime,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+<!DOCTYPE HTML>
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Countdown</title>
+    
+    <!-- Style sheets -->
+    
+	<style>
+
+
+.fc-panel .fc-digitUnit, .fc-panel .fc-colon {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+	overflow: hidden;
+
+}
+
+.fc-panel .fc-captions {
+	margin-top:10px; /* Set here the offset between units and the captions */
+	font-family: Myriad Pro, sans-serif; /* The font for the captions */
+	font-size: 22px; /* Set here the size of the captions */
+	color: #000000; /* Set here the color of the captions */
+	display: block;
+	text-align: center;
+}
+
+.fc-panel .fc-width {
+	width: 20px; /* The width for the digits */
+}
+
+.fc-panel .fc-height {
+	height: 36px;
+	line-height: 36px;
+	color: #000;
+	border:0;
+}
+
+.fc-panel .fc-colon-width {
+	width: 20px; /* The width for the colon */
+}
+
+.fc-panel .fc-font {
+	font-size: 36px; /* The size for the font */
+}
+
+.fc-panel .fc-digit-offset {
+	top: 30px; /* The top offset between the digits, in previous versions it was the topDigitOffset option */
+	bottom: 30px; /* The bottom offset between the digits, in previous versions it was the bottomDigitOffset option */
+}
+
+
+
+/* Do not change anything from here! */
+
+.fc-panel {
+	zoom: 1; width: 504px; margin:0 auto;
+}
+
+.fc-panel:before, .fc-panel:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.fc-panel:after { clear: both; }
+
+.fc-panel > div {
+	float: left; margin: 0 30px;
+}
+
+.fc-panel ul.fc-digits {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;		
+}
+
+.fc-panel ul.fc-digits li {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.fc-panel .fc-digitOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.fc-panel .fc-colon > div {
+	text-align: center;
+}
+
+	</style>
+	
+    
+    <!-- Include js files
+	<script src="http://cc.radykal.de/fancycountdown/js/jquery.min.js" type="text/javascript"></script>
+   	<script src="http://cc.radykal.de/fancycountdown/js/farbtastic.js" type="text/javascript"></script>
+    <script src="http://cc.radykal.de/fancycountdown/js/jquery.fancyCountdown.min.js" type="text/javascript"></script>-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.fancyCountdown.min.js"></script>
+   
+    <script type="text/javascript">
+jQuery(document).ready(function(){
+
+
+    //init plugin
+	$('#fancyCountdown').fancyCountdown({
+		year:2018,
+		month:12,
+		day:21,
+		hour:12,
+		minute:12,
+		second:12,
+		timezone:1,
+		digitUnitHeight:85,
+		autoStart:true,
+		callback:targetReached,
+		digits:{days:true,hours:true,minutes:true,seconds:true},
+		bottomDigitOffset: 28,
+		overlayImageUrl: ''
+	});
+
+	function targetReached() {
+	  $('#target-date-reached').slideDown(500);
+	  return false;
+    };
+
+	
+
+});
+    </script>
+            
+
+    
+    </head>
+    
+    <body>
+    	
+    		
+  	<div id="fancyCountdown"></div>
+  	
+    
+
+
+    </body>
+</html>

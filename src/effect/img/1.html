@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///Users/cieldon/h5/html/dskiss/1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta content="telephone=no" name="format-detection">
+<meta charset="utf-8">
+<title>1</title>
+<script src="./1_files/gph1pei.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<link rel="stylesheet" type="text/css" href="./1_files/1.css">
+</head>
+<body class="pc">
+	<div class="wrap">
+		<p class="title1">coming soon</p>
+		<p class="title2">The <b>first auction</b> starts in</p>
+		<div id="fancyCountdown" class="cutdown fc-panel"><div class="fc-digit-offset"></div><div class="fc-days-wrapper"><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -36px;">9</li><li class="fc-height fc-font" style="top: -72px;">0</li><li class="fc-height fc-font" style="top: 0px;">1</li><li class="fc-height fc-font" style="top: 36px;">2</li></ul></div><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -36px;">3</li><li class="fc-height fc-font" style="top: -72px;">4</li><li class="fc-height fc-font" style="top: 0px;">5</li><li class="fc-height fc-font" style="top: 36px;">6</li></ul></div><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -36px;">2</li><li class="fc-height fc-font" style="top: -72px;">3</li><li class="fc-height fc-font" style="top: 0px;">4</li><li class="fc-height fc-font" style="top: 36px;">5</li></ul></div><span class="fc-captions">Days</span></div><div class="fc-hours-wrapper"><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -36px;">1</li><li class="fc-height fc-font" style="top: -72px;">2</li><li class="fc-height fc-font" style="top: 0px;">0</li><li class="fc-height fc-font" style="top: 36px;">1</li></ul></div><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -36px;">9</li><li class="fc-height fc-font" style="top: -72px;">0</li><li class="fc-height fc-font" style="top: 0px;">1</li><li class="fc-height fc-font" style="top: 36px;">2</li></ul></div><span class="fc-captions">Hours</span></div><div class="fc-minutes-wrapper"><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -36px;">5</li><li class="fc-height fc-font" style="top: -72px;">0</li><li class="fc-height fc-font" style="top: 0px;">1</li><li class="fc-height fc-font" style="top: 36px;">2</li></ul></div><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -36px;">7</li><li class="fc-height fc-font" style="top: -72px;">8</li><li class="fc-height fc-font" style="top: 0px;">9</li><li class="fc-height fc-font" style="top: 36px;">0</li></ul></div><span class="fc-captions">Minutes</span></div><div class="fc-seconds-wrapper"><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -36px;">0</li><li class="fc-height fc-font" style="top: -72px;">1</li><li class="fc-height fc-font" style="top: 0px;">2</li><li class="fc-height fc-font" style="top: 36px;">3</li></ul></div><div class="fc-digitUnit fc-width fc-height"><ul class="fc-digits"><li class="fc-height fc-font" style="top: -35px;">7</li><li class="fc-height fc-font" style="top: -35px;">8</li><li class="fc-height fc-font" style="top: 0px;">9</li><li class="fc-height fc-font" style="top: 35px;">0</li></ul></div><span class="fc-captions">Seconds</span></div></div>
+		<p class="title3">Call us<br><a href="tel:400-150-1101">400-150-1101</a></p>
+		<p class="title4"><a href="file:///Users/cieldon/h5/html/dskiss/1.html#">EN</a><a href="file:///Users/cieldon/h5/html/dskiss/1.html#">中文</a></p>
+	</div>
+	<div class="bg"><i></i></div>
+<script type="text/javascript" src="./1_files/jquery.js"></script>
+<script type="text/javascript" src="./1_files/jquery.fancyCountdown.min.js"></script>
+   
+    <script type="text/javascript">
+    $(function(){
+        $('#fancyCountdown').fancyCountdown({
+            year:2018,
+            month:12,
+            day:21,
+            hour:12,
+            minute:12,
+            second:12,
+            timezone:1,
+            digitUnitHeight:85,
+            autoStart:true,
+            callback:targetReached,
+            digits:{days:true,hours:true,minutes:true,seconds:true},
+            bottomDigitOffset: 28,
+            overlayImageUrl: ''
+        });
+
+        function targetReached() {
+          $('#target-date-reached').slideDown(500);
+          return false;
+        };
+
+        function reset(){
+            var w = document.body.scrollWidth;
+            var h = document.body.scrollHeight;
+            var r = w/h;
+            if(navigator.userAgent.indexOf('Mobile')<0){
+                $('body').addClass('pc');
+                console.log(r);
+            }
+        }
+        $(window).resize(function(){
+            reset();
+        });
+        $(window).load(function(){
+            reset();
+        });
+    });
+    </script>
+
+
+</body></html>

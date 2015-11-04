@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8"/>
 <title>media</title>
-<!-- <link rel="stylesheet" type="text/css" href="http://csstest.cy.com/dist/others/css/media.css" /> -->
 <style>
 * {margin:0;padding:0; outline: 0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
 *,
@@ -14,8 +13,18 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-size: 14px;
+    font-family: arial, "\5FAE\8F6F\96C5\9ED1";
+    -webkit-text-size-adjust: none;
+}
 
-body{background: #ff0000;}
+body{background: url('img/bg.jpg') no-repeat center bottom fixed; background-size: cover;}
 img {
     border: 0;
     -ms-interpolation-mode: bicubic;
@@ -33,10 +42,44 @@ img {
     text-shadow: none;
 }
 </style>
+<link rel="stylesheet" type="text/css" href="http://csstest.cy.com/dist/others/css/media.css" />
+
 </head>
 <body>
-<div class="media"></div>
-<img class="quic" src="http://csstest.cy.com/dist/others/img/1.jpg">
+<div class="media">
+<p>title</p>
+</div>
+
 <script type="text/javascript" src="http://jstest.cy.com/dist/g/js/lib.js" id="libjsnode"></script>
+<script>
+
+function reset(){
+    var w = document.body.scrollWidth;
+    var h = document.body.scrollHeight;
+    var rate = (3000/1686).toFixed(1);
+    var r1 = 0.54;
+    var r2 = 0.7;
+    var div = $('.media');
+    var p = div.find('p');
+    var top = h*r1;
+    var bottom = h*r2-top;
+    var pageRate = (w/h).toFixed(1);
+    if( pageRate < rate){
+       top = h/rate - 10;
+       bottom = h*r2-top;
+    }else if( pageRate > rate){
+        top = (w/rate)*r1-(w/rate-h);
+        bottom = (w/rate)*r2-(w/rate-h)-top;
+    }
+    div.css('padding-top',top+'px');
+    p.css('padding-bottom', bottom+'px');
+}
+$(window).load(function(){
+    reset();
+});
+$(window).resize(function(){
+    reset();
+});
+</script>
 </body>
 </html>
