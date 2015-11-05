@@ -230,20 +230,27 @@ b{.bold; font-weight: normal;}
 		>span{font-size: 25px; line-height: 25px; display: block;}
 		a{padding: 0; color: #fff;}
 	}
-	.bd{padding: 10px;
-		input,.file{width: 100%; height: 30px; border:1px solid #48626c; background: #88a1ab; color: #fff; padding: 0 10px;
-			.placeholder(#fff);
+	.bd{padding: 10px; overflow:hidden;
+		input,.file, select{width: 100%; height: 30px; border:1px solid #48626c; background: #88a1ab; color: #fff; padding: 0 10px; float: left;
+			.placeholder(#fff); margin: 5px 0;
 		}
 		.file{line-height: 28px; position: relative; overflow: hidden; .light;font-size: 12px;
-			input{position: absolute; width: 200%; height: 200%; top:0; left:0; .opacity(0);}
+			input{position: absolute; width: 200%; height: 200%; top:0; left:0; .opacity(0); margin: 0;}
 		}
-		.code{height: 30px;
-			input{width: 60%; float: left;}
+		.code{height: 30px; margin: 5px 0; overflow:hidden; float: left; width: 100%;
+			input{width: 60%; float: left; margin: 0;}
 			span{border:1px solid #fff; background: #209bd6; display: block; width: 38%; float: left; height: 30px; line-height: 28px; margin-left: 2%; font-size: 10px; text-align: center;}
 		}
-		p{line-height: 20px; text-align: center; padding: 30px 0 0 0; font-size: 12px;}
-		>span{display: block; line-height: 30px; font-size: 12px; padding: 0 0 40px 0;}
-		a b{color: #fff; .thin;}
+		p{line-height: 20px; text-align: center; padding: 30px 0 0 0; font-size: 12px;float: left; width: 100%;}
+		>span{display: block; line-height: 20px; font-size: 12px; padding: 0 0 50px 0;float: left;}
+		>label{
+			overflow: hidden;padding: 0 0 50px 0;
+	    display: block;
+	    float: left;
+	    line-height: 30px;
+	    input{width: auto; margin: 0}
+		}
+		a b{color: #2c738f; .thin; text-decoration: underline;}
 	}
 	.ft{padding: 10px; 
 		a{height: 40px; display: block; color: #fff; background: url('./../img/form-bg.png') repeat-x left top; text-align: center; .bold; font-size: 18px; padding: 0; line-height: 40px;}

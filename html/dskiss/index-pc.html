@@ -7,8 +7,11 @@
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
 <meta name="format-detection" content="telephone=no">
 <meta content="telephone=no" name="format-detection">
+<meta name="HandheldFriendly" content="true">
 <meta charset="utf-8"/>
-<title>3</title>
+<title>DSkies</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/> 
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
@@ -25,7 +28,7 @@ Dskies aim to be  cultural hub where educational, artistic, and entrepreneurial 
 </div>
 <div class="nav">
     <div class="wrap">
-        <a href="#" class="logo" title="kskies"></a>
+        <a href="#" class="logo" title="DSkies"></a>
         <a class="more">more</a>
         <div class="nav-wrap">
             <a href="#">About us</a>
@@ -49,9 +52,12 @@ Dskies aim to be  cultural hub where educational, artistic, and entrepreneurial 
                 <div class="bd">
                     <input type="text" placeholder="Given name"/>
                     <input type="text" placeholder="Family name"/>
-                    <input type="text" placeholder="Specialization"/>
+                    <select>
+                        <option value="">Specialization</option>
+                        <option value="2">2</option>
+                    </select>
                     <div class="file">Portfolio PDF format (max 5 mb)<input type="file"/></div>
-                    <p><a href="#form-close"><b>Skip</b></a><br> this step and update later in your profile page</p>
+                    <p><a href="#form-close"><b>Skip</b></a>this step and update later in your profile page</p>
                 </div>
                 <div class="ft">
                     <a href="#form-close">Complete</a>
@@ -68,7 +74,7 @@ Dskies aim to be  cultural hub where educational, artistic, and entrepreneurial 
                     <input type="email" placeholder="e-mail"/>
                     <input type="password" placeholder="Password"/>
                     <div class="code"><input type="text"/><span>VERIFY MESSAGE</span></div>
-                    <span>Forgot your password?</span>
+                    <label><input type="checkbox"/> I agree the terms</label>
                 </div>
                 <div class="ft">
                     <a href="#signup-complete">Join</a>
@@ -78,6 +84,7 @@ Dskies aim to be  cultural hub where educational, artistic, and entrepreneurial 
                 <div class="hd">
                     <b>Hey there!</b>
                     <span>Look what<br>is available<br>this week!</span>
+                    <a href="#signup">Not a member? <b>Sign up here!</b></a>
                 </div>
                 <div class="bd">
                     <input type="text" placeholder="e-mail/phone number"/>

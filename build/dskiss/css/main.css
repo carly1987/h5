@@ -924,30 +924,38 @@ b {
 }
 .form .bd {
   padding: 10px;
+  overflow: hidden;
 }
 .form .bd input,
-.form .bd .file {
+.form .bd .file,
+.form .bd select {
   width: 100%;
   height: 30px;
   border: 1px solid #48626c;
   background: #88a1ab;
   color: #fff;
   padding: 0 10px;
+  float: left;
+  margin: 5px 0;
 }
 .form .bd input::-webkit-input-placeholder,
-.form .bd .file::-webkit-input-placeholder {
+.form .bd .file::-webkit-input-placeholder,
+.form .bd select::-webkit-input-placeholder {
   color: #ffffff;
 }
 .form .bd input:-moz-placeholder,
-.form .bd .file:-moz-placeholder {
+.form .bd .file:-moz-placeholder,
+.form .bd select:-moz-placeholder {
   color: #ffffff;
 }
 .form .bd input::-moz-placeholder,
-.form .bd .file::-moz-placeholder {
+.form .bd .file::-moz-placeholder,
+.form .bd select::-moz-placeholder {
   color: #ffffff;
 }
 .form .bd input:-ms-input-placeholder,
-.form .bd .file:-ms-input-placeholder {
+.form .bd .file:-ms-input-placeholder,
+.form .bd select:-ms-input-placeholder {
   color: #ffffff;
 }
 .form .bd .file {
@@ -968,13 +976,19 @@ b {
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
+  margin: 0;
 }
 .form .bd .code {
   height: 30px;
+  margin: 5px 0;
+  overflow: hidden;
+  float: left;
+  width: 100%;
 }
 .form .bd .code input {
   width: 60%;
   float: left;
+  margin: 0;
 }
 .form .bd .code span {
   border: 1px solid #fff;
@@ -996,9 +1010,19 @@ b {
 }
 .form .bd > span {
   display: block;
-  line-height: 30px;
+  line-height: 20px;
   font-size: 12px;
   padding: 0 0 40px 0;
+}
+.form .bd > label {
+  overflow: hidden;
+  display: block;
+  float: left;
+  line-height: 30px;
+}
+.form .bd > label input {
+  width: auto;
+  margin: 0;
 }
 .form .bd a b {
   color: #fff;
