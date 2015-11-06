@@ -21,7 +21,7 @@ exports.main = {
 	"css" : [
 		'dskiss/css/index.less',
 		'dskiss/css/main.less',
-		'dskiss/css/form.less'
+		'dskiss/css/sign.less'
 	]
 };
 
