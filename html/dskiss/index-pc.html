@@ -13,6 +13,7 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/> 
 <link rel="stylesheet" type="text/css" href="css/main.css" />
+<!-- <link rel="stylesheet" type="text/css" href="http://csstest.cy.com/dist/dskiss/css/main.css" /> -->
 </head>
 <body>
 <div class="sec secAbout">
@@ -40,6 +41,7 @@ Dskies aim to be  cultural hub where educational, artistic, and entrepreneurial 
                     <span><b>Coming soon</b>Jing An Temple<br>Lu JIa Zui<br>People Square<br>Xu Jia Hui</span></p></div>
             <a href="#auction">Auction</a>
         </div>
+        <a class="user"></a>
         <div class="nav-user">
             <a href="#signin">Login</a>
             <a href="#signup">Sign up</a>
@@ -54,7 +56,14 @@ Dskies aim to be  cultural hub where educational, artistic, and entrepreneurial 
                     <input type="text" placeholder="Family name"/>
                     <select>
                         <option value="">Specialization</option>
-                        <option value="2">2</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Fashion designer">Fashion designer</option>
+                        <option value="Graphic designer">Graphic designer</option>
+                        <option value="Illustrator">Illustrator</option>
+                        <option value="Industrial designer">Industrial designer</option>
+                        <option value="Maker">Maker</option>
+                        <option value="Photographer">Photographer</option>
+                        <option value="Other">Other</option>
                     </select>
                     <div class="file">Portfolio PDF format (max 5 mb)<input type="file"/></div>
                     <p><a href="#form-close"><b>Skip</b></a>this step and update later in your profile page</p>
@@ -70,6 +79,7 @@ Dskies aim to be  cultural hub where educational, artistic, and entrepreneurial 
                     <a href="#signin">Already a member? <b>Sign in !</b></a>
                 </div>
                 <div class="bd">
+                    <div class="msg">it is error</div>
                     <input type="phone" placeholder="Phone number"/>
                     <input type="email" placeholder="e-mail"/>
                     <input type="password" placeholder="Password"/>
@@ -111,14 +121,14 @@ Dskies aim to be  cultural hub where educational, artistic, and entrepreneurial 
 <div class="sec secOffice">
     <div class="wrap">
         <p class="mod-p"><i class="icon icon-invitation"></i><span>DSkies <b>invitation</b></span>DSkies takes care about the qualities and skills of designers to whom offers great services.<br>
-In order to stimulate the good design in Shanghai and China, DSkies give a free desk to <b>one</b> designer that consider worthy and talended. To be invited, please be sure to send us your personal portfolio!</p>
+In order to stimulate the good design in Shanghai and China, DSkies give a free desk to <b id="office">one</b> designer that consider worthy and talended. To be invited, please be sure to send us your personal portfolio!</p>
         <p class="mod-p"><i class="icon icon-luck"></i><span><b>Luck</b> draw</span>DSkies also gives a chance to lucky guys through a lottery. Just <b>one</b> designer will be randomly chosen by our reliable and tried system.<br>
 Just bid and find out how much lucky you are!</p>
         <p class="mod-p"><i class="icon icon-boost"></i><span><b>Wechat</b> boost</span>DSkies reserves an exclusive desk to <b>one</b> supports more our campaign of outstanding designers hunting.<br>
 To do this, just spread to your creative friends the DSkies advertising page through Wechat.</p>
     </div>
     <div class="slider">
-        <div class="mod-slider" id="office">
+        <div class="mod-slider" id="offices">
             <ul class="slider-list">
                 <li><a><img src="img/offices01.jpg"/></a><i><em></em><span><img src="img/offices01.jpg"/></span></i></li>
                 <li><a><img src="img/offices02.jpg"/></a><i><em></em><span><img src="img/offices02.jpg"/></span></i></li>
@@ -127,18 +137,23 @@ To do this, just spread to your creative friends the DSkies advertising page thr
                 <li><a><img src="img/offices05.jpg"/></a><i><em></em><span><img src="img/offices05.jpg"/></span></i></li>
                 <li><a><img src="img/offices06.jpg"/></a><i><em></em><span><img src="img/offices06.jpg"/></span></i></li>
                 <li><a><img src="img/offices07.jpg"/></a><i><em></em><span><img src="img/offices07.jpg"/></span></i></li>
+                <li><a><img src="img/offices08.jpg"/></a><i><em></em><span><img src="img/offices08.jpg"/></span></i></li>
                 <li><a><img src="img/offices01.jpg"/></a><i><em></em><span><img src="img/offices01.jpg"/></span></i></li>
                 <li><a><img src="img/offices02.jpg"/></a><i><em></em><span><img src="img/offices02.jpg"/></span></i></li>
                 <li><a><img src="img/offices03.jpg"/></a><i><em></em><span><img src="img/offices03.jpg"/></span></i></li>
             </ul>
             <div class="slider-page">
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
+                <a href="#" style="display:none;">1</a>
+                <a href="#" style="display:none;">2</a>
+                <a href="#" class="active">3</a>
                 <a href="#">4</a>
                 <a href="#">5</a>
                 <a href="#">6</a>
                 <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#" style="display:none;">3</a>
             </div>
         </div>
         <i class="slider-bg-left"></i>
@@ -167,7 +182,7 @@ we provides independent creatives a place to get work done, meet clients and pro
         The first special DSky is based in the middle of Xintiandi, a key landmark,the best location for creatives and designers from all over the world. </p>
     </div>
 </div>
-<div class="sec secFooter" id="footer">
+<div class="sec secFooter" id="footers">
     <div class="wrap">
         <div class="hd">
             <p class="title1">Not a member yet?<br>Get <b>now</b> your<br><b>special membership!</b></p>
@@ -213,7 +228,7 @@ we provides independent creatives a place to get work done, meet clients and pro
             <p class="title2">
                 <span class="left">Terms of Use | Privacy Policy | Legal Statement | Site map</span>
 
-                <span class="right">2015-2016 DSkies EUCP All rights reserved<i>沪ICP证000000号</i></span>
+                <span class="right">2015-2016 DSkies EUCP All rights reserved<i>沪ICP备15049473号-2</i></span>
             </p>
         </div>
     </div>
@@ -245,7 +260,7 @@ $(function(){
         },
 
     });
-    indexSwipe("office");
+    indexSwipe("offices");
     function targetReached() {
       $('#target-date-reached').slideDown(500);
       return false;
@@ -280,7 +295,7 @@ $(function(){
             if(w<360){
                 var rate = (320/920).toFixed(1);
             }else if(w >= 360 && w<480){
-                var rate = (375/845).toFixed(1);
+                var rate = (375/800).toFixed(1);
             }else{
                 var rate = (480/800).toFixed(1);
             }
@@ -304,7 +319,7 @@ $(function(){
     $('[href="#signin"]').click(function(e){
         e.stopPropagation();
         if(isMobile > 0){
-            window.location.href="4.html";
+            window.location.href="signin.html";
         }else{
             var self = $(e.currenttarget);
             var $form = $('.form-signin');
@@ -316,7 +331,7 @@ $(function(){
     $('[href="#signup-complete"]').click(function(e){
         e.stopPropagation();
         if(isMobile > 0){
-            window.location.href="6.html";
+            window.location.href="signupComplete.html";
         }else{
             var self = $(e.currenttarget);
             var $form = $('.form-signup-complete');
@@ -332,7 +347,7 @@ $(function(){
     $('[href="#signup"]').click(function(e){
         e.stopPropagation();
         if(isMobile > 0){
-            window.location.href="5.html";
+            window.location.href="signup.html";
         }else{
             var self = $(e.currenttarget);
             var $form = $('.form-signup');
@@ -360,6 +375,10 @@ $(function(){
     $('.more').click(function(e){
         var self = $(e.currentTarget);
         self.next('.nav-wrap').toggle();
+    });
+    $('.user').click(function(e){
+        var self = $(e.currentTarget);
+        self.next('.nav-user').toggle();
     });
     $('.secFooter dt').click(function(e){
         var self = $(e.currentTarget);

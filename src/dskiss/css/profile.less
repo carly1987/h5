@@ -1,0 +1,32 @@
+@import "././g/css/base.less";
+@import "././g/css/lesshat.less";
+@import "font.less";
+.bold{font-family: aileronbold "\5FAE\8F6F\96C5\9ED1";}
+.thin{font-family: aileronthin "\5FAE\8F6F\96C5\9ED1";}
+.ultraLight{font-family: aileronultraLight "\5FAE\8F6F\96C5\9ED1";}
+.regular{font-family: aileronregular "\5FAE\8F6F\96C5\9ED1";}
+.light{font-family: aileronlight "\5FAE\8F6F\96C5\9ED1";}
+body{.thin; font-size: 16px;  background: url('./../img/bg-profile.jpg') repeat-x left top #000; background-size: auto 100%;}
+.wrap{width: 800px; margin: 0 auto;}
+b{.bold; font-weight: normal;}
+
+.profile{
+	>div{overflow: hidden; text-align: center; &,& a{color: #fff;}}
+	.hd{padding: 70px 20px 30px 20px;}
+	.file{border:1px solid #fff; width: 200px; height: 250px; overflow: hidden; margin: 0 auto; position: relative;
+		span{display: block;width: 100%; height: 100%; background-size: cover; background-origin: center center; background-repeat: no-repeat;}
+		input{.opacity(0); position: absolute; width: 500%; height: 500%; left: -50%; top:-50%; display: none; z-index: 2;}
+		i{position: absolute;  background: url('./../img/edit.png') center center no-repeat; background-size: auto 70%; display: none;width: 50px; height: 50px; right: 0; bottom: 0; z-index: 1;}
+	}
+	.bd{
+		p{margin: 10px 0;}
+		b{display: block; font-size: 20px; .bold;}
+	}
+	.ft{
+		padding:10px 20px; border-top:1px solid #fff;
+		a{ display: block; padding-bottom: 10px;
+		}
+	}
+}
+
+

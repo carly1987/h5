@@ -1,6 +1,7 @@
 @import "././g/css/base.less";
 @import "././g/css/lesshat.less";
 @import "font.less";
+
 .bold{font-family: aileronbold "\5FAE\8F6F\96C5\9ED1";}
 .thin{font-family: aileronthin "\5FAE\8F6F\96C5\9ED1";}
 .ultraLight{font-family: aileronultraLight "\5FAE\8F6F\96C5\9ED1";}
@@ -8,9 +9,11 @@
 .light{font-family: aileronlight "\5FAE\8F6F\96C5\9ED1";}
 body{.thin; font-size: 16px;}
 .wrap{width: 800px; margin: 0 auto;}
-b{.bold; font-weight: normal;}
+b{.bold; font-weight: normal; 
+	.ch &{font-weight: bold;}
+}
 .sec{min-height: 1%; overflow: hidden; position: relative; z-index: 0;}
-.secAbout{background: url('./../img/bg.jpg') no-repeat center bottom; background-size: cover;
+.secAbout{background: url('./../img/bg.png') no-repeat center bottom; background-size: cover;
 	p{text-align: center; font-size: 14px;color: #fff;}
 	.title1{color: #333; b{font-size: 26px; line-height: 26px;}}
 	.title2{font-size: 30px; line-height: 28px;}
@@ -101,7 +104,7 @@ b{.bold; font-weight: normal;}
 		.form{position: absolute; top:50px; right: 10px;}
 	}
 	.wrap{position: relative;}
-	.more{background: url('./../img/icon.png') no-repeat 0 -702px; width: 64px; height: 46px; line-height: 1000px; overflow: hidden; display: none;}
+	.more{background: url('./../img/icon.png') no-repeat 0 -702px; width: 64px; height: 46px; line-height: 1000px; overflow: hidden; display: none; float: left;}
 	.nav-wrap{overflow: visible; height: 46px;
 		>a{display: block; float: left; width: 25%; line-height: 46px; text-align: center; .bold; font-size: 14px; color: #333;}
 		.menu{width: 25%; float: left;.bold;
@@ -116,7 +119,7 @@ b{.bold; font-weight: normal;}
 			}
 		}
 	}
-
+	.user{background: url('./../img/key.png') no-repeat center center; width: 46px; height: 46px; background-size: auto 50%; display: none; float: right;}
 }
 .menu{position: relative;
 	>span, dt span{width: 100%; display: block;}
@@ -204,59 +207,27 @@ b{.bold; font-weight: normal;}
 	.slider-bg-left{background: url('./../img/slider-bg-left.png') no-repeat right center; left: 0;}
 	.slider-bg-right{background: url('./../img/slider-bg-right.png') no-repeat left center; right: 0;}
 }
-.mod-slider{ max-width: 800px;position:relative; overflow:visible; text-align:center;height: auto; margin: 0 auto; padding-bottom: 80px;
+.mod-slider{ max-width: 800px;position:relative; overflow:visible; text-align:center;height: auto; margin: 0 auto; padding-bottom: 30px;
 	.slider-list{overflow: hidden; 
 		li{width: 100%; height: 100%; overflow: hidden; text-align: center; float: left; padding: 0 20px;
 			a,i{display: block; width: 100%; height: auto;overflow: hidden;float: left; position: relative;
 				img{max-width: 100%;}
 			}
-			i{height: 100px;
+			i{height: 50px;
 				em{
-					display: block; position: absolute; background: url('./../img/slider-bg-bottom.png') repeat-x left top; width: 100%; height: 100%; top:0; left: 0; z-index: 1;
+					display: block; position: absolute; background: url('./../img/slider-bg-bottom.png') repeat-x left bottom; width: 100%; height: 100%; top:0; left: 0; z-index: 1; background-size: auto 100%;
 				}
 				span{.rotateX(180deg); position: relative; z-index: 0; display: block;}
 			}
 		}
 	}
-	.slider-page{height: 20px; line-height: 20px;width:100%; margin: 0 auto; position: absolute; bottom: 30px; left: 50%; margin-left: -50%; z-index: 100;
+	.slider-page{height: 20px; line-height: 20px;width:100%; margin: 0 auto; position: absolute; bottom: 0; left: 50%; margin-left: -50%; z-index: 100;
 		a{display:inline-block; width:10px; height:10px; line-height:9999px; overflow:hidden; background: #e0e1e0; border-radius:10px; margin:0 5px;
 			&.active{ background:#2ca7dd;}
 		}
 	}
 }
-.form{height: 586px; width: 332px; background: url('./../img/form-bg.png') repeat-x left top #222; border-radius: 10px; overflow: hidden; text-align: left; color: #fff;
-	.hd{padding: 50px 10px 50px 10px;
-		>b{font-size: 40px; display: block; line-height: 40px;}
-		>span{font-size: 25px; line-height: 25px; display: block;}
-		a{padding: 0; color: #fff;}
-	}
-	.bd{padding: 10px; overflow:hidden;
-		input,.file, select{width: 100%; height: 30px; border:1px solid #48626c; background: #88a1ab; color: #fff; padding: 0 10px; float: left;
-			.placeholder(#fff); margin: 5px 0;
-		}
-		.file{line-height: 28px; position: relative; overflow: hidden; .light;font-size: 12px;
-			input{position: absolute; width: 200%; height: 200%; top:0; left:0; .opacity(0); margin: 0;}
-		}
-		.code{height: 30px; margin: 5px 0; overflow:hidden; float: left; width: 100%;
-			input{width: 60%; float: left; margin: 0;}
-			span{border:1px solid #fff; background: #209bd6; display: block; width: 38%; float: left; height: 30px; line-height: 28px; margin-left: 2%; font-size: 10px; text-align: center;}
-		}
-		p{line-height: 20px; text-align: center; padding: 30px 0 0 0; font-size: 12px;float: left; width: 100%;}
-		>span{display: block; line-height: 20px; font-size: 12px; padding: 0 0 50px 0;float: left;}
-		>label{
-			overflow: hidden;padding: 0 0 50px 0;
-	    display: block;
-	    float: left;
-	    line-height: 30px;
-	    input{width: auto; margin: 0}
-		}
-		a b{color: #2c738f; .thin; text-decoration: underline;}
-	}
-	.ft{padding: 10px; 
-		a{height: 40px; display: block; color: #fff; background: url('./../img/form-bg.png') repeat-x left top; text-align: center; .bold; font-size: 18px; padding: 0; line-height: 40px;}
-	}
-	&.form-signin .hd{padding-bottom: 120px;}
-}
+@import "form.less";
 @media screen and (max-width:1060px){
 	.nav .wrap{width: 600px;}
 }
@@ -264,12 +235,9 @@ b{.bold; font-weight: normal;}
 screen and (orientation: portrait){
 	.wrap,.nav .wrap{width: 100%;}
 	.nav{position: relative;
-		.logo{left: 70px;}
-		.nav-user{display: block; right: 0;
-			a{padding: 0 10px 0 0;}
-		}
+		.logo{left: 50%; margin-left: -60px;}
 		.more{display: block;}
-		.nav-wrap{float: left; position: absolute; top:48px; left: 0;background: #454545;
+		.nav-wrap,.nav-user{float: left; position: absolute; top:48px; left: 0;background: #454545;
 			width: 100px;
 			height: 190px; display: none;
 			a{width: 100%; color: #fff; border-bottom:1px solid #666;
@@ -284,12 +252,16 @@ screen and (orientation: portrait){
 				}
 			}
 		}
+		.user{display: block;}
+		.nav-user{ left: auto; right: 0; height: 94px;
+			a{padding:0; display: block; text-align: center;}
+		}
 	}
 	.secArea,
 	.secOffice{
 		.mod-p{width: 100%; margin: 30px 0;}
 	}
-	.secAbout{
+	.secAbout{background-image: url('./../img/bg.png');
 		.title1 b{font-size: 16px; line-height: 18px;}
 		.title2{font-size: 18px; line-height: 20px;}
 		.title3{width: 100%; padding:0 20px;}
@@ -347,7 +319,13 @@ screen and (orientation: portrait){
 				}
 			}
 		}
-		.ft{margin-top: 18px;}
+		.ft{margin-top: 18px;
+			.title2{ padding-top: 18px;
+				span{width: 100%;
+					&,&.right{ text-align:center;}
+				}
+			}
+		}
 	}
 	.slider{
 		.slider-bg-left,

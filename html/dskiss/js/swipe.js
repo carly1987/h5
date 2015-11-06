@@ -135,8 +135,8 @@ Swipe.prototype = {
         this.delay = delay || 0;
         clearTimeout(this.interval);
 
-        if (this.index < this.length - 1) this.slide(this.index+1, this.speed); // if not last slide
-        else this.slide(0, this.speed); //if last slide return to start
+        if (this.index < this.length - 2) this.slide(this.index+1, this.speed); // if not last slide
+        else this.slide(2, this.speed); //if last slide return to start
 
     },
 

@@ -1,0 +1,21 @@
+@import "././g/css/base.less";
+@import "././g/css/lesshat.less";
+@import "font.less";
+.bold{font-family: aileronbold "\5FAE\8F6F\96C5\9ED1";}
+.thin{font-family: aileronthin "\5FAE\8F6F\96C5\9ED1";}
+.ultraLight{font-family: aileronultraLight "\5FAE\8F6F\96C5\9ED1";}
+.regular{font-family: aileronregular "\5FAE\8F6F\96C5\9ED1";}
+.light{font-family: aileronlight "\5FAE\8F6F\96C5\9ED1";}
+body{.thin; font-size: 16px;  background: url('./../img/form-bg.png') repeat-x left top #000; background-size: auto 100%;}
+.wrap{width: 800px; margin: 0 auto;}
+b{.bold; font-weight: normal;}
+
+@import "form.less";
+.form{width: 100%; padding: 0 10px; height: 100%; background: none; position: relative;
+	.hd,.bd,.ft{position: absolute; width: 100%; left: 50%; margin-left: -50%;}
+	.hd{height: 40%; top:0; display: table;
+		p{width: 100%; height:100%; display: table-cell; vertical-align: middle;}
+	}
+	.bd{height: 50%; top:40%;}
+	.ft{height: 10%; bottom: 0}
+}
