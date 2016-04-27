@@ -1,0 +1,636 @@
+{
+frames: {
+01_82.png: {
+frame: {
+x: 656,
+y: 977,
+w: 162,
+h: 143
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 162,
+h: 143
+},
+sourceSize: {
+w: 162,
+h: 143
+}
+},
+01_99.png: {
+frame: {
+x: 2,
+y: 1005,
+w: 184,
+h: 162
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 184,
+h: 162
+},
+sourceSize: {
+w: 184,
+h: 162
+}
+},
+01_text_L.png: {
+frame: {
+x: 2,
+y: 930,
+w: 205,
+h: 73
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 205,
+h: 73
+},
+sourceSize: {
+w: 205,
+h: 73
+}
+},
+01_text_R.png: {
+frame: {
+x: 656,
+y: 906,
+w: 181,
+h: 69
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 181,
+h: 69
+},
+sourceSize: {
+w: 181,
+h: 69
+}
+},
+01_title.png: {
+frame: {
+x: 2,
+y: 122,
+w: 343,
+h: 129
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 343,
+h: 129
+},
+sourceSize: {
+w: 343,
+h: 129
+}
+},
+02_gl.png: {
+frame: {
+x: 820,
+y: 1064,
+w: 148,
+h: 130
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 148,
+h: 130
+},
+sourceSize: {
+w: 148,
+h: 130
+}
+},
+02_stage.png: {
+frame: {
+x: 839,
+y: 906,
+w: 177,
+h: 156
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 177,
+h: 156
+},
+sourceSize: {
+w: 177,
+h: 156
+}
+},
+02_text_L.png: {
+frame: {
+x: 723,
+y: 534,
+w: 229,
+h: 99
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 229,
+h: 99
+},
+sourceSize: {
+w: 229,
+h: 99
+}
+},
+02_text_R.png: {
+frame: {
+x: 723,
+y: 635,
+w: 227,
+h: 96
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 227,
+h: 96
+},
+sourceSize: {
+w: 227,
+h: 96
+}
+},
+02_title.png: {
+frame: {
+x: 347,
+y: 122,
+w: 277,
+h: 127
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 277,
+h: 127
+},
+sourceSize: {
+w: 277,
+h: 127
+}
+},
+03_multiple.png: {
+frame: {
+x: 399,
+y: 1032,
+w: 134,
+h: 117
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 134,
+h: 117
+},
+sourceSize: {
+w: 134,
+h: 117
+}
+},
+03_single.png: {
+frame: {
+x: 460,
+y: 859,
+w: 194,
+h: 171
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 194,
+h: 171
+},
+sourceSize: {
+w: 194,
+h: 171
+}
+},
+03_text_L.png: {
+frame: {
+x: 245,
+y: 523,
+w: 241,
+h: 206
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 241,
+h: 206
+},
+sourceSize: {
+w: 241,
+h: 206
+}
+},
+03_text_R.png: {
+frame: {
+x: 2,
+y: 592,
+w: 232,
+h: 206
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 232,
+h: 206
+},
+sourceSize: {
+w: 232,
+h: 206
+}
+},
+03_title.png: {
+frame: {
+x: 2,
+y: 253,
+w: 247,
+h: 129
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 247,
+h: 129
+},
+sourceSize: {
+w: 247,
+h: 129
+}
+},
+04_anim.png: {
+frame: {
+x: 619,
+y: 281,
+w: 102,
+h: 89
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 102,
+h: 89
+},
+sourceSize: {
+w: 102,
+h: 89
+}
+},
+04_flash.png: {
+frame: {
+x: 713,
+y: 733,
+w: 194,
+h: 171
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 194,
+h: 171
+},
+sourceSize: {
+w: 194,
+h: 171
+}
+},
+04_text_L.png: {
+frame: {
+x: 723,
+y: 353,
+w: 256,
+h: 179
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 256,
+h: 179
+},
+sourceSize: {
+w: 256,
+h: 179
+}
+},
+04_text_R.png: {
+frame: {
+x: 2,
+y: 384,
+w: 241,
+h: 206
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 241,
+h: 206
+},
+sourceSize: {
+w: 241,
+h: 206
+}
+},
+04_title.png: {
+frame: {
+x: 488,
+y: 523,
+w: 233,
+h: 127
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 233,
+h: 127
+},
+sourceSize: {
+w: 233,
+h: 127
+}
+},
+05_0.png: {
+frame: {
+x: 535,
+y: 1032,
+w: 119,
+h: 105
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 119,
+h: 105
+},
+sourceSize: {
+w: 119,
+h: 105
+}
+},
+05_97.png: {
+frame: {
+x: 209,
+y: 935,
+w: 188,
+h: 165
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 188,
+h: 165
+},
+sourceSize: {
+w: 188,
+h: 165
+}
+},
+05_text_L.png: {
+frame: {
+x: 488,
+y: 652,
+w: 223,
+h: 205
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 223,
+h: 205
+},
+sourceSize: {
+w: 223,
+h: 205
+}
+},
+05_text_R.png: {
+frame: {
+x: 236,
+y: 731,
+w: 222,
+h: 202
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 222,
+h: 202
+},
+sourceSize: {
+w: 222,
+h: 202
+}
+},
+05_title.png: {
+frame: {
+x: 2,
+y: 800,
+w: 207,
+h: 128
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 207,
+h: 128
+},
+sourceSize: {
+w: 207,
+h: 128
+}
+},
+balanceBar.png: {
+frame: {
+x: 2,
+y: 2,
+w: 722,
+h: 118
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 722,
+h: 118
+},
+sourceSize: {
+w: 722,
+h: 118
+}
+},
+balancePan.png: {
+frame: {
+x: 726,
+y: 2,
+w: 289,
+h: 349
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 289,
+h: 349
+},
+sourceSize: {
+w: 289,
+h: 349
+}
+},
+pivot.png: {
+frame: {
+x: 626,
+y: 122,
+w: 79,
+h: 79
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 79,
+h: 79
+},
+sourceSize: {
+w: 79,
+h: 79
+}
+},
+point.png: {
+frame: {
+x: 626,
+y: 203,
+w: 58,
+h: 76
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 58,
+h: 76
+},
+sourceSize: {
+w: 58,
+h: 76
+}
+},
+pop.png: {
+frame: {
+x: 619,
+y: 372,
+w: 100,
+h: 100
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 100,
+h: 100
+},
+sourceSize: {
+w: 100,
+h: 100
+}
+},
+textDisc.png: {
+frame: {
+x: 347,
+y: 251,
+w: 270,
+h: 270
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 270,
+h: 270
+},
+sourceSize: {
+w: 270,
+h: 270
+}
+}
+},
+meta: {
+app: "http://www.texturepacker.com",
+version: "1.0",
+image: "ResultsAssets.png",
+format: "RGBA8888",
+size: {
+w: 1018,
+h: 1196
+},
+scale: "1",
+smartupdate: "$TexturePacker:SmartUpdate:919bbefd8b74445506c7d1aa0b85393e$"
+}
+}

@@ -34,17 +34,39 @@ b{.bold; font-weight: normal;
 	.title2{margin: 32px;}
 }
 .secOffice{border-bottom: 1px solid #e1e1e1; overflow: hidden; padding-bottom: 40px;
-	.wrap{overflow: hidden;padding: 0 0.5%; }
+	.wrap{overflow: hidden;padding: 60px 0.5% 0 0.5%;
+		&.share {
+		  position: relative;
+		  z-index: 11;
+		  margin-top: -50px;
+		  padding-top: 0;
+		}
+	}
 	.title1{font-size: 60px; margin: 30px auto; line-height: 60px; text-align: center;}
-	.mod-p{width: 33.3%; margin: 60px 0; }
+	.title2{text-align: justify;}
+	.mod-p{width: 33.3%; text-align: justify; }
 }
 .secArea{ 
 	.wrap{overflow: hidden;}
-	.mod-p{width: 25%; margin: 60px 0; padding:0 20px;}
+	.mod-p{width: 25%; margin: 60px 0; padding:0 20px;text-align: justify;
+		span {
+		  min-height: 95px;
+		  margin-bottom: 0;
+		}
+	}
 }
-.secLocations{background: url('./../img/address.jpg') no-repeat center bottom; padding: 0 0 150px 0;
-	.title1{font-size: 60px; line-height: 60px; margin: 30px 0;}
-	.title2{width: 50%;}	
+.secLocations{background-image: url('../img/map3.png');
+  padding: 0 0 150px 0;
+  background-size: 2000px 434px;
+	.title1{font-size: 60px; line-height: 60px; margin: 0 0 30px 0;}
+	.title2{margin: 0 0 30px 0;}	
+}
+.locations-anchor {
+  background: transparent;
+  margin-bottom: 150px;
+}
+#locations {
+  height: 0;
 }
 .secFooter{background: #222; color: #fff; padding: 36px 0;
 	div{overflow: hidden;}
@@ -54,9 +76,20 @@ b{.bold; font-weight: normal;
 	.hd{border-bottom:1px solid #fff; 
 		p{width: 50%;}
 		.title1{font-size: 25px; padding-top: 24px;}
-		.title2{font-size: 30px; text-align:right; span{display: block; font-size: 14px;padding: 10px 0;} b{font-size: 40px;}}
+		.title2{font-size: 30px; text-align:right; 
+			span{display: block; font-size: 14px;padding: 10px 0;} 
+			a {
+			  font-size: 40px;
+			  font-family: aileronbold;
+			}
+		}
 	}
-	.logo{background: url('./../img/icon.png') no-repeat 0 -96px; height: 30px; display: block;}
+	.logo{
+	  background: url('../img/DSkies-logo2.png') 0 0 no-repeat;
+	  height: 30px;
+	  display: block;
+	  background-size: cover;
+	}
 	.join{display: inline-block;}
 	.bd{padding: 10px 0;
 		small{display: block; padding: 0 32px 10px 0; text-align: right;}
@@ -76,13 +109,13 @@ b{.bold; font-weight: normal;
 	.menu{
 		dt span{color: #fff;}
 		dd{
-			a{padding-bottom: 16px;}
+			a{padding-bottom: 16px;color: #fff;}
 			span b{padding: 6px 0 16px 0;}
 		}
 	}
 	.ft{
 		p{font-size: 12px; overflow: hidden; display: block; line-height: 26px; width: 100%;}
-		.title1{text-align: right;
+		.title1{text-align: center;
 			a{padding-left: 20px;}
 		}
 		.title2{border-top: 1px solid #fff;
@@ -98,7 +131,11 @@ b{.bold; font-weight: normal;
 	height: 48px; border:1px solid #e0e5e8; position: relative; z-index: 1000; background: #fff; overflow: visible;
 	&.navFix{position: fixed; top:0; left: 0; width: 100%;}
 	.logo,.nav-user{position: absolute; top:0; height: 46px; line-height: 46px; }
-	.logo{background: url('./../img/icon.png') no-repeat 0 0; display: block; left: -120px;width:120px;}
+	.logo{background: url('../img/DSkies-logo.png') no-repeat 0 0;
+  display: block;
+  left: -120px;
+  width: 120px;
+  background-size: cover;}
 	.nav-user{ text-align: right; right: -120px;width:200px;
 		a{padding-left: 30px; color: #333; .bold;}
 		.form{position: absolute; top:50px; right: 10px;}
@@ -109,10 +146,10 @@ b{.bold; font-weight: normal;
 		>a{display: block; float: left; width: 25%; line-height: 46px; text-align: center; .bold; font-size: 14px; color: #333;}
 		.menu{width: 25%; float: left;.bold;
 			>span{color: #333; height: 46px; font-size: 14px; line-height: 46px; text-align:center;}
-			>p{background: #454545;position: absolute; top:48px; left: 0; text-align: left; border-radius: 0 0 5px 5px; width: 100%; display: none;
-				a{line-height: 48px; padding: 30px 0 0 20px;}
+			>p{background: #454545;position: absolute; top: 46px;left: 0; text-align: left; border-radius: 0 0 5px 5px; width: 100%; display: none;
+				a{line-height: 48px; padding: 30px 0 0 20px;color: #fff;}
 				span{padding: 0 20px 20px 20px;}
-				b{padding: 14px 0;}
+				b{padding: 14px 0; .light;}
 			}
 			&:hover{
 				>p{display: block;}
@@ -126,9 +163,12 @@ b{.bold; font-weight: normal;
 	>p, dd{
 		a{display: block; width: 100%; color: #999;}
 		span{
-			border-top: 1px solid #666; display: block;  line-height: 16px; color: #666;
+			border-top: 1px solid #666; display: block;  line-height: 16px; color: #666; .light;
 			b{font-size: 16px;  display: block;}
 		}
+	}
+	>p{
+		a{.light;}
 	}
 }
 .cutdown{overflow: hidden;  position: relative; width: 100%;
@@ -187,7 +227,12 @@ b{.bold; font-weight: normal;
 		}
 	}
 }
-.join{background: url('./../img/icon.png') no-repeat 0 -152px; width: 79px; height: 79px; text-indent: -9999px; overflow: hidden;}
+.join{background: url('./../img/join-button.png') 0 0 no-repeat;
+  width: 79px;
+  height: 79px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-size: cover;}
 .icon{width:48px; height: 49px; overflow: hidden;
 	&.icon-invitation{background: url('./../img/icon-a.png') no-repeat center center; background-size: 100% 100%;}
 	&.icon-luck{background: url('./../img/icon-b.png') no-repeat center center; background-size: 100% 100%;}
@@ -202,18 +247,25 @@ b{.bold; font-weight: normal;
 	span{display: block;.light; margin: 20px auto; font-size: 20px; text-align: center; line-height: 26px;}
 }
 /*slider*/
+.office-anchor {
+  background: transparent;
+  margin-bottom: 60px;
+}
+#office {
+  height: 70px;
+}
 .slider{width: 100%; position: relative; overflow: hidden; height: auto;
 	>i{position: absolute; display: block; width: 400px; height: 100%; top:0;}
 	.slider-bg-left{background: url('./../img/slider-bg-left.png') no-repeat right center; left: 0;}
 	.slider-bg-right{background: url('./../img/slider-bg-right.png') no-repeat left center; right: 0;}
 }
-.mod-slider{ max-width: 800px;position:relative; overflow:visible; text-align:center;height: auto; margin: 0 auto; padding-bottom: 30px;
+.mod-slider{ max-width: 800px;position:relative; overflow:visible; text-align:center;height: auto; margin: 0 auto; padding-bottom: 0;
 	.slider-list{overflow: hidden; 
 		li{width: 100%; height: 100%; overflow: hidden; text-align: center; float: left; padding: 0 20px;
 			a,i{display: block; width: 100%; height: auto;overflow: hidden;float: left; position: relative;
 				img{max-width: 100%;}
 			}
-			i{height: 50px;
+			i{height: 300px;
 				em{
 					display: block; position: absolute; background: url('./../img/slider-bg-bottom.png') repeat-x left bottom; width: 100%; height: 100%; top:0; left: 0; z-index: 1; background-size: auto 100%;
 				}
@@ -221,7 +273,7 @@ b{.bold; font-weight: normal;
 			}
 		}
 	}
-	.slider-page{height: 20px; line-height: 20px;width:100%; margin: 0 auto; position: absolute; bottom: 0; left: 50%; margin-left: -50%; z-index: 100;
+	.slider-page{height: 20px; line-height: 20px;width:100%; margin: 0 auto; position: absolute; bottom: 250px; left: 50%; margin-left: -50%; z-index: 100;
 		a{display:inline-block; width:10px; height:10px; line-height:9999px; overflow:hidden; background: #e0e1e0; border-radius:10px; margin:0 5px;
 			&.active{ background:#2ca7dd;}
 		}
@@ -262,7 +314,7 @@ screen and (orientation: portrait){
 		.mod-p{width: 100%; margin: 30px 0;}
 	}
 	.secAbout{background-image: url('./../img/bg.png');
-		.title1 b{font-size: 16px; line-height: 18px;}
+		.title1 a{font-size: 16px; line-height: 18px;.bold;color: #333;}
 		.title2{font-size: 18px; line-height: 20px;}
 		.title3{width: 100%; padding:0 20px;}
 	}
@@ -336,4 +388,101 @@ screen and (orientation: portrait){
 			li{padding: 0;}
 		}
 	}
+}
+
+#profile-page {
+  background: url("../img/profile-bg.jpg") center top repeat-y;
+}
+.profile-sec {
+  padding: 50px 0 30px 0;
+}
+.profile-sec .image {
+  position: relative;
+  margin: 0 auto 20px auto;
+  width: 200px;
+}
+#upload-profile {
+  display: none;
+}
+.profile-sec .image .avatar {
+  display : block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #fff;
+}
+.profile-sec .image .change-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: 10;
+  cursor: pointer;
+}
+.profile-sec .image .change-icon img {
+  display: block;
+}
+.profile-sec .info {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+}
+.profile-sec .info a {
+  color: #fff;
+}
+.profile-sec .info h2 {
+  margin: 0;
+  font-family: aileronbold, sans-serif;
+  font-size: 20px;
+}
+.profile-sec .info .occupation {
+  margin: 0 0 15px 0;
+  font-family: aileronlight, sans-serif;
+  font-size: 16px;
+}
+.profile-sec .info .contact {
+  margin: 0 0 15px 0;
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+}
+.profile-sec .info .bottom-link {
+  font-size: 15px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  z-index: 1000;
+}
+.modal-dialog {
+  margin: 50px auto 0 auto;
+  width: 600px;
+}
+.form-update-profile {
+  position: relative;
+  margin: 0 auto;
+}
+.form.form-update-profile .bd {
+  height: auto;
+}
+.form.form-update-profile .ft {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.form.form-update-profile .close-icon {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/dot.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.form.form-update-profile .close-icon:hover {
+  background-image: url("../img/dot2.png");
 }

@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   outline: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 *,
 *:before,
@@ -57,16 +56,6 @@ video {
   display: inline-block;
   width: 100%;
   background: #000;
-}
-::-moz-selection {
-  background: #222;
-  text-shadow: none;
-  color: #fff;
-}
-::selection {
-  background: #222;
-  text-shadow: none;
-  color: #fff;
 }
 dl,
 ul,
@@ -267,6 +256,9 @@ b {
   font-family: aileronbold "\5FAE\8F6F\96C5\9ED1";
   font-weight: normal;
 }
+.ch b {
+  font-weight: bold;
+}
 .sec {
   min-height: 1%;
   overflow: hidden;
@@ -274,7 +266,7 @@ b {
   z-index: 0;
 }
 .secAbout {
-  background: url('./../img/bg_2e2b2d3.jpg') no-repeat center bottom;
+  background: url('./../img/bg_5c1c551.png') no-repeat center bottom;
   background-size: cover;
 }
 .secAbout p {
@@ -285,9 +277,11 @@ b {
 .secAbout .title1 {
   color: #333;
 }
-.secAbout .title1 b {
+.secAbout .title1 a {
   font-size: 26px;
   line-height: 26px;
+  font-family: aileronbold "\5FAE\8F6F\96C5\9ED1";
+  color: #333;
 }
 .secAbout .title2 {
   font-size: 30px;
@@ -365,7 +359,13 @@ b {
 }
 .secOffice .wrap {
   overflow: hidden;
-  padding: 0 0.5%;
+  padding: 60px 0.5% 0 0.5%;
+}
+.secOffice .wrap.share {
+  position: relative;
+  z-index: 11;
+  margin-top: -50px;
+  padding-top: 0;
 }
 .secOffice .title1 {
   font-size: 60px;
@@ -373,9 +373,12 @@ b {
   line-height: 60px;
   text-align: center;
 }
+.secOffice .title2 {
+  text-align: justify;
+}
 .secOffice .mod-p {
   width: 33.3%;
-  margin: 60px 0;
+  text-align: justify;
 }
 .secArea .wrap {
   overflow: hidden;
@@ -384,18 +387,32 @@ b {
   width: 25%;
   margin: 60px 0;
   padding: 0 20px;
+  text-align: justify;
+}
+.secArea .mod-p span {
+  min-height: 95px;
+  margin-bottom: 0;
 }
 .secLocations {
-  background: url('./../img/address_42fa758.jpg') no-repeat center bottom;
+  background: url('../img/map2.png') no-repeat center bottom;
   padding: 0 0 150px 0;
+  background-size: 2000px 434px;
+}
+.locations-anchor {
+  background: transparent;
+  margin-bottom: 150px;
+}
+#locations {
+  height: 0;
 }
 .secLocations .title1 {
   font-size: 60px;
   line-height: 60px;
-  margin: 30px 0;
+  margin: 0 0 30px 0;
 }
 .secLocations .title2 {
-  width: 50%;
+  width: 380px;
+  text-align: justify;
 }
 .secFooter {
   background: #222;
@@ -433,13 +450,15 @@ b {
   font-size: 14px;
   padding: 10px 0;
 }
-.secFooter .hd .title2 b {
+.secFooter .hd .title2 a {
   font-size: 40px;
+  font-family: aileronbold;
 }
 .secFooter .logo {
-  background: url('./../img/icon_9afa360.png') no-repeat 0 -96px;
+  background: url('../img/DSkies-logo2.png') 0 0 no-repeat;
   height: 30px;
   display: block;
+  background-size: cover;
 }
 .secFooter .join {
   display: inline-block;
@@ -491,6 +510,7 @@ b {
 }
 .secFooter .menu dd a {
   padding-bottom: 16px;
+  color: #fff;
 }
 .secFooter .menu dd span b {
   padding: 6px 0 16px 0;
@@ -545,10 +565,11 @@ b {
   line-height: 46px;
 }
 .nav .logo {
-  background: url('./../img/icon_9afa360.png') no-repeat 0 0;
+  background: url('../img/DSkies-logo.png') no-repeat 0 0;
   display: block;
   left: -120px;
   width: 120px;
+  background-size: cover;
 }
 .nav .nav-user {
   text-align: right;
@@ -575,6 +596,7 @@ b {
   line-height: 1000px;
   overflow: hidden;
   display: none;
+  float: left;
 }
 .nav .nav-wrap {
   overflow: visible;
@@ -605,7 +627,7 @@ b {
 .nav .nav-wrap .menu > p {
   background: #454545;
   position: absolute;
-  top: 48px;
+  top: 46px;
   left: 0;
   text-align: left;
   border-radius: 0 0 5px 5px;
@@ -615,15 +637,25 @@ b {
 .nav .nav-wrap .menu > p a {
   line-height: 48px;
   padding: 30px 0 0 20px;
+  color: #fff;
 }
 .nav .nav-wrap .menu > p span {
   padding: 0 20px 20px 20px;
 }
 .nav .nav-wrap .menu > p b {
   padding: 14px 0;
+  font-family: aileronlight;
 }
 .nav .nav-wrap .menu:hover > p {
   display: block;
+}
+.nav .user {
+  background: url('./../img/key_7cb2a80.png') no-repeat center center;
+  width: 46px;
+  height: 46px;
+  background-size: auto 50%;
+  display: none;
+  float: right;
 }
 .menu {
   position: relative;
@@ -639,12 +671,16 @@ b {
   width: 100%;
   color: #999;
 }
+.menu > p a {
+  font-family: aileronlight;
+}
 .menu > p span,
 .menu dd span {
   border-top: 1px solid #666;
   display: block;
   line-height: 16px;
   color: #666;
+  font-family: aileronlight;
 }
 .menu > p span b,
 .menu dd span b {
@@ -738,11 +774,12 @@ b {
   line-height: 26px;
 }
 .join {
-  background: url('./../img/icon_9afa360.png') no-repeat 0 -152px;
+  background: url('./../img/join-button.png') 0 0 no-repeat;
   width: 79px;
   height: 79px;
   text-indent: -9999px;
   overflow: hidden;
+  background-size: cover;
 }
 .icon {
   width: 48px;
@@ -795,6 +832,13 @@ b {
   line-height: 26px;
 }
 /*slider*/
+.office-anchor {
+  background: transparent;
+  margin-bottom: 60px;
+}
+#office {
+  height: 70px;
+}
 .slider {
   width: 100%;
   position: relative;
@@ -823,7 +867,7 @@ b {
   text-align: center;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 .mod-slider .slider-list {
   overflow: hidden;
@@ -850,17 +894,18 @@ b {
   max-width: 100%;
 }
 .mod-slider .slider-list li i {
-  height: 100px;
+  height: 300px;
 }
 .mod-slider .slider-list li i em {
   display: block;
   position: absolute;
-  background: url('./../img/slider-bg-bottom_4df559e.png') repeat-x left top;
+  background: url('./../img/slider-bg-bottom_4df559e.png') repeat-x left bottom;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 1;
+  background-size: auto 100%;
 }
 .mod-slider .slider-list li i span {
   -webkit-transform: rotateX(180deg);
@@ -878,7 +923,7 @@ b {
   width: 100%;
   margin: 0 auto;
   position: absolute;
-  bottom: 30px;
+  bottom: 250px;
   left: 50%;
   margin-left: -50%;
   z-index: 100;
@@ -906,14 +951,17 @@ b {
   color: #fff;
 }
 .form .hd {
-  padding: 50px 10px 50px 10px;
+  height: 240px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
 }
-.form .hd > b {
+.form .hd b {
   font-size: 40px;
   display: block;
   line-height: 40px;
 }
-.form .hd > span {
+.form .hd span {
   font-size: 25px;
   line-height: 25px;
   display: block;
@@ -921,10 +969,17 @@ b {
 .form .hd a {
   padding: 0;
   color: #fff;
+  font-size: 12px;
+}
+.form .hd a b {
+  font-size: 12px;
+  display: inline;
+  line-height: inherit;
 }
 .form .bd {
   padding: 10px;
   overflow: hidden;
+  height: 276px;
 }
 .form .bd input,
 .form .bd .file,
@@ -936,7 +991,7 @@ b {
   color: #fff;
   padding: 0 10px;
   float: left;
-  margin: 5px 0;
+  margin: 5px 0 0 0;
 }
 .form .bd input::-webkit-input-placeholder,
 .form .bd .file::-webkit-input-placeholder,
@@ -980,7 +1035,7 @@ b {
 }
 .form .bd .code {
   height: 30px;
-  margin: 5px 0;
+  margin: 5px 0 0 0;
   overflow: hidden;
   float: left;
   width: 100%;
@@ -1004,32 +1059,46 @@ b {
 }
 .form .bd p {
   line-height: 20px;
-  text-align: center;
+  text-align: left;
   padding: 30px 0 0 0;
   font-size: 12px;
+  float: left;
+  width: 100%;
 }
 .form .bd > span {
   display: block;
   line-height: 20px;
   font-size: 12px;
-  padding: 0 0 40px 0;
+  padding: 0 0 50px 0;
+  float: left;
 }
 .form .bd > label {
   overflow: hidden;
+  padding: 0 0 50px 0;
   display: block;
   float: left;
   line-height: 30px;
 }
 .form .bd > label input {
   width: auto;
-  margin: 0;
+  margin: 0 5px 0 0;
 }
 .form .bd a b {
+  color: #2c738f;
+  text-decoration: underline;
+  padding-right: 5px;
+}
+.form .bd .msg {
+  background: #f5ae3c;
   color: #fff;
-  font-family: aileronthin "\5FAE\8F6F\96C5\9ED1";
+  text-align: center;
+  height: 30px;
+  border: 1px solid #48626c;
+  line-height: 28px;
 }
 .form .ft {
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
+  height: 70px;
 }
 .form .ft a {
   height: 40px;
@@ -1041,9 +1110,6 @@ b {
   font-size: 18px;
   padding: 0;
   line-height: 40px;
-}
-.form.form-signin .hd {
-  padding-bottom: 120px;
 }
 @media screen and (max-width: 1060px) {
   .nav .wrap {
@@ -1059,19 +1125,14 @@ b {
     position: relative;
   }
   .nav .logo {
-    left: 70px;
-  }
-  .nav .nav-user {
-    display: block;
-    right: 0;
-  }
-  .nav .nav-user a {
-    padding: 0 10px 0 0;
+    left: 50%;
+    margin-left: -60px;
   }
   .nav .more {
     display: block;
   }
-  .nav .nav-wrap {
+  .nav .nav-wrap,
+  .nav .nav-user {
     float: left;
     position: absolute;
     top: 48px;
@@ -1081,22 +1142,27 @@ b {
     height: 190px;
     display: none;
   }
-  .nav .nav-wrap a {
+  .nav .nav-wrap a,
+  .nav .nav-user a {
     width: 100%;
     color: #fff;
     border-bottom: 1px solid #666;
   }
-  .nav .nav-wrap a:last-child {
+  .nav .nav-wrap a:last-child,
+  .nav .nav-user a:last-child {
     border: 0;
   }
-  .nav .nav-wrap .menu {
+  .nav .nav-wrap .menu,
+  .nav .nav-user .menu {
     width: 100%;
   }
-  .nav .nav-wrap .menu span {
+  .nav .nav-wrap .menu span,
+  .nav .nav-user .menu span {
     text-align: center;
     color: #fff;
   }
-  .nav .nav-wrap .menu p {
+  .nav .nav-wrap .menu p,
+  .nav .nav-user .menu p {
     display: none;
     top: -94px;
     left: 100px;
@@ -1105,7 +1171,8 @@ b {
     font-family: aileronthin "\5FAE\8F6F\96C5\9ED1";
     height: 190px;
   }
-  .nav .nav-wrap .menu p a {
+  .nav .nav-wrap .menu p a,
+  .nav .nav-user .menu p a {
     padding: 0;
     height: 46px;
     line-height: 46px;
@@ -1113,20 +1180,38 @@ b {
     text-align: center;
     color: #fff;
   }
-  .nav .nav-wrap .menu p b {
+  .nav .nav-wrap .menu p b,
+  .nav .nav-user .menu p b {
     font-family: aileronthin "\5FAE\8F6F\96C5\9ED1";
   }
-  .nav .nav-wrap .menu p span {
+  .nav .nav-wrap .menu p span,
+  .nav .nav-user .menu p span {
     zoom: 1;
     filter: alpha(opacity=50);
     -webkit-opacity: 0.5;
     -moz-opacity: 0.5;
     opacity: 0.5;
   }
+  .nav .user {
+    display: block;
+  }
+  .nav .nav-user {
+    left: auto;
+    right: 0;
+    height: 94px;
+  }
+  .nav .nav-user a {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
   .secArea .mod-p,
   .secOffice .mod-p {
     width: 100%;
     margin: 30px 0;
+  }
+  .secAbout {
+    background-image: url('./../img/bg_5c1c551.png');
   }
   .secAbout .title1 b {
     font-size: 16px;
@@ -1198,7 +1283,7 @@ b {
   }
   .secLocations {
     padding: 0 20px 150px 20px;
-    background-image: url('./../img/address-s_b47dbe0.jpg');
+    background-image: url('../img/map3.png');
     background-size: 100% auto;
   }
   .secLocations .title1 {
@@ -1277,6 +1362,19 @@ b {
   .secFooter .ft {
     margin-top: 18px;
   }
+  .secFooter .ft .title1 {
+    text-align: center;
+  }
+  .secFooter .ft .title2 {
+    padding-top: 18px;
+  }
+  .secFooter .ft .title2 span {
+    width: 100%;
+  }
+  .secFooter .ft .title2 span,
+  .secFooter .ft .title2 span.right {
+    text-align: center;
+  }
   .slider .slider-bg-left,
   .slider .slider-bg-right {
     display: none;
@@ -1285,3 +1383,106 @@ b {
     padding: 0;
   }
 }
+#profile-page {
+  background: url("../img/profile-bg.jpg") center top repeat-y;
+}
+.profile-sec {
+  padding: 50px 0 30px 0;
+}
+.profile-sec .image {
+  position: relative;
+  margin: 0 auto 20px auto;
+  width: 200px;
+}
+#upload-profile {
+  display: none;
+}
+.profile-sec .image .avatar {
+  display : block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #fff;
+}
+.profile-sec .image .change-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: 10;
+  cursor: pointer;
+}
+.profile-sec .image .change-icon img {
+  display: block;
+}
+.profile-sec .info {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+}
+.profile-sec .info a {
+  color: #fff;
+}
+.profile-sec .info h2 {
+  margin: 0;
+  font-family: aileronbold, sans-serif;
+  font-size: 20px;
+}
+.profile-sec .info .occupation {
+  margin: 0 0 15px 0;
+  font-family: aileronlight, sans-serif;
+  font-size: 16px;
+}
+.profile-sec .info .contact {
+  margin: 0 0 15px 0;
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+}
+.profile-sec .info .bottom-link {
+  font-size: 15px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  z-index: 1000;
+}
+.modal-dialog {
+  margin: 50px auto 0 auto;
+  width: 600px;
+}
+.form-update-profile {
+  position: relative;
+  margin: 0 auto;
+}
+.form.form-update-profile .bd {
+  height: auto;
+}
+.form.form-update-profile .ft {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.form.form-update-profile .close-icon {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/dot.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.form.form-update-profile .close-icon:hover {
+  background-image: url("../img/dot2.png");
+}
+
+
+
+
+
+
+

@@ -1,0 +1,256 @@
+{
+frames: {
+BGslit.png: {
+frame: {
+x: 192,
+y: 108,
+w: 20,
+h: 8
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 20,
+h: 8
+},
+sourceSize: {
+w: 20,
+h: 8
+}
+},
+navFade.png: {
+frame: {
+x: 2,
+y: 2,
+w: 807,
+h: 83
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 807,
+h: 83
+},
+sourceSize: {
+w: 807,
+h: 83
+}
+},
+navTint.png: {
+frame: {
+x: 811,
+y: 2,
+w: 50,
+h: 50
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 50,
+h: 50
+},
+sourceSize: {
+w: 50,
+h: 50
+}
+},
+nav_concG.png: {
+frame: {
+x: 115,
+y: 87,
+w: 111,
+h: 19
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 111,
+h: 19
+},
+sourceSize: {
+w: 111,
+h: 19
+}
+},
+nav_concW.png: {
+frame: {
+x: 2,
+y: 87,
+w: 111,
+h: 19
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 111,
+h: 19
+},
+sourceSize: {
+w: 111,
+h: 19
+}
+},
+nav_findG.png: {
+frame: {
+x: 304,
+y: 87,
+w: 74,
+h: 19
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 74,
+h: 19
+},
+sourceSize: {
+w: 74,
+h: 19
+}
+},
+nav_findW.png: {
+frame: {
+x: 228,
+y: 87,
+w: 74,
+h: 19
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 74,
+h: 19
+},
+sourceSize: {
+w: 74,
+h: 19
+}
+},
+nav_homeG.png: {
+frame: {
+x: 56,
+y: 108,
+w: 52,
+h: 18
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 52,
+h: 18
+},
+sourceSize: {
+w: 52,
+h: 18
+}
+},
+nav_homeW.png: {
+frame: {
+x: 2,
+y: 108,
+w: 52,
+h: 18
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 52,
+h: 18
+},
+sourceSize: {
+w: 52,
+h: 18
+}
+},
+nav_playG.png: {
+frame: {
+x: 151,
+y: 108,
+w: 39,
+h: 17
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 39,
+h: 17
+},
+sourceSize: {
+w: 39,
+h: 17
+}
+},
+nav_playW.png: {
+frame: {
+x: 110,
+y: 108,
+w: 39,
+h: 17
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 39,
+h: 17
+},
+sourceSize: {
+w: 39,
+h: 17
+}
+},
+progressBar.png: {
+frame: {
+x: 192,
+y: 118,
+w: 20,
+h: 8
+},
+rotated: false,
+trimmed: false,
+spriteSourceSize: {
+x: 0,
+y: 0,
+w: 20,
+h: 8
+},
+sourceSize: {
+w: 20,
+h: 8
+}
+}
+},
+meta: {
+app: "http://www.texturepacker.com",
+version: "1.0",
+image: "MenuAssets.png",
+format: "RGBA8888",
+size: {
+w: 863,
+h: 128
+},
+scale: "1",
+smartupdate: "$TexturePacker:SmartUpdate:d1b66a0970e2d312700ad188c64ddd32$"
+}
+}
